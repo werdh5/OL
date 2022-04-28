@@ -8,7 +8,7 @@
         "Fire",
         "VideoPlayer"
     ],
-    "repository": "https://heroku.com/deploy?template=https://github.com/MD-SX/IM_XD",
+    "repository": "https://github.com/MD-SX/IM_XD",
     "env": {
         "SESSION": {
             "description": "• حط هنا كود جلسه البايوجرام .",
