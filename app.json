@@ -1,0 +1,51 @@
+{
+    "name": "سورس ميوزك فاير",
+    "description": "سورس ميوزك فاير 2021",
+    "logo": "https://telegra.ph/file/02ff5eed4dc2a34cbc1f7.jpg",
+    "keywords": [
+        "Telegram",
+        "MusicPlayer",
+        "Fire",
+        "VideoPlayer"
+    ],
+    "repository": "https://github.com/LA-UA/LURM",
+    "env": {
+        "SESSION": {
+            "description": "• حط هنا كود جلسه البايوجرام .",
+            "required": true
+        },
+        "API_ID": {
+            "description": "• حط هنا الايبي ايدي .",
+            "required": true
+        },
+        "HNDLR": {
+            "description": "• سيبها زي مهيا .",
+            "required": false,
+            "value": "!"
+        },
+        "API_HASH": {
+            "description": "• حط هنا الايبي هاش .",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "• حط هنا ايدي مطور البوت ال هوا حسابك الاساسي .",
+            "required": true
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}
